@@ -218,7 +218,19 @@
       textarea.value = ''
       useCount.innerHTML = 0
     })
-  
+    
+    //按下确定键创建  
+    textarea.addEventListener('keyup',function(e){
+
+      if(e.key === 'Enter'){
+        //自动触发按钮
+        send.click()
+      
+      }
+         //创建完li标签则输入框跟span数字长度都会清空
+      //    textarea.value = ''
+      // useCount.innerHTML = 0
+    })
   </script>
 </body>
 
